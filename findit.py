@@ -13,7 +13,7 @@ def run_re():
     infile = open('large_re_file.txt', 'r')
     match_count = 0
     lines = 0
-    for lines in infile:
+    for line in infile:
         match = re.search(pattern, line)
         if match:
             match_count += 1
